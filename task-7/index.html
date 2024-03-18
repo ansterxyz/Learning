@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости ремонта</title>
+    <!-- подключаем CSS и JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Расчет стоимости ремонта жилых помещений</h1>
+    <div>
+        <label for="tile">Укладка плитки (количество):</label>
+        <input type="number" id="tile" placeholder="Количество">
+        <label for="priceTile">Стоимость за единицу:</label>
+        <input type="number" id="priceTile" placeholder="Стоимость">
+    </div>
+    <br>
+    <div>
+        <label for="plastering">Штукатурка стен (количество):</label>
+        <input type="number" id="plastering" placeholder="Количество">
+        <label for="pricePlastering">Стоимость за единицу:</label>
+        <input type="number" id="pricePlastering" placeholder="Стоимость">
+    </div>
+    <br>
+    <div>
+        <label for="plumbing">Установка сантехники (количество):</label>
+        <input type="number" id="plumbing" placeholder="Количество">
+        <label for="pricePlumbing">Стоимость за единицу:</label>
+        <input type="number" id="pricePlumbing" placeholder="Стоимость">
+    </div>
+    <button onclick="calculate()">Рассчитать стоимость</button>
+    <div id="result"></div>
+</body>
+</html>
