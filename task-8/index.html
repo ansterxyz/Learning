@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление событий</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <form id="eventForm">
+        <label for="eventName">Название события:</label><br>
+        <input type="text" id="eventName" name="eventName"><br>
+        <label for="eventDate">Дата события:</label><br>
+        <input type="date" id="eventDate" name="eventDate"><br>
+        <label for="eventDescription">Описание события:</label><br>
+        <textarea id="eventDescription" name="eventDescription" rows="4"></textarea><br>
+        <label for="eventLocation">Место события:</label><br>
+        <input type="text" id="eventLocation" name="eventLocation"><br>
+        <label for="eventImage">Изображение:</label><br>
+        <input type="file" id="eventImage" name="eventImage"><br>
+        <button type="submit">Добавить событие</button>
+    </form>
+
+    <div class="event-cards"></div>
+</body>
+</html>

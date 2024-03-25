@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: var(--font-sans);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    /* */
+    display: flex;
+    justify-content: center;
+}
+
+
+:root {
+    --olive: #808000;
+    --silver: #C0C0C0;
+    --golden: #FFD700;
+}
+.contract-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contract-info {
+    margin-bottom: 10px;
+}
+.contract-info p {
+    margin: 5px 0;
+}
