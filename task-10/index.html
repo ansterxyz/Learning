@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<h1>Мой календарь событий</h1>
+		<div>
+			<label for="eventTitle">Заголовок события:</label>
+			<input type="text" id="eventTitle" />
+		</div>
+		<div>
+			<label for="eventDate">Дата:</label>
+			<input type="date" id="eventDate" />
+		</div>
+		<div>
+			<label for="eventStartTime">Время начала:</label>
+			<input type="time" id="eventStartTime" />
+		</div>
+		<div>
+			<label for="eventEndTime">Время окончания:</label>
+			<input type="time" id="eventEndTime" />
+		</div>
+		<div>
+			<label for="eventDescription">Описание:</label>
+			<textarea id="eventDescription"></textarea>
+		</div>
+		<button onclick="saveData()">Добавить событие</button>
+
+		<h2>Список моих событий</h2>
+		<ul id="eventList"></ul>
+	</body>
+</html>
