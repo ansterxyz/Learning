@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authorization</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="main.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Авторизация и Регистрация</h1>
+<div id="authForm">
+<input type="text" id="username" placeholder="Имя пользователя">
+<input type="password" id="password" placeholder="Пароль">
+<button onclick="login()">Войти</button>
+<p>Нет аккаунта? <a href="#" onclick="showRegistrationForm()">Зарегистрируйтесь</a></p>
+</div>
+<div id="regForm" style="display: none;">
+<input type="text" id="regUsername" placeholder="Имя пользователя">
+<input type="password" id="regPassword" placeholder="Пароль">
+<input type="text" id="regFullName" placeholder="ФИО">
+<input type="email" id="regEmail" placeholder="Адрес эл.почты">
+<button onclick="register()">Зарегистрироваться</button>
+<p>Уже есть аккаунт? <a href="#" onclick="showAuthForm()">Войдите</a></p>
+</div>
+<div id="profile" style="display: none;">
+<h2>Профиль</h2>
+<p id="userInfo"></p>
+<button onclick="logout()">Выйти</button>
+</div>
+</div>
+</body>
+</html>
